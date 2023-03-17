@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForms_DataGridView",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForms_To-Do_Uygulaması", "WindowsForms_To-Do_Uygulaması\WindowsForms_To-Do_Uygulaması.csproj", "{C7F02465-DBBE-46B5-A731-6EE0838D0D56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dosya_Ve_Klasor_Islemleri", "Dosya_Ve_Klasor_Islemleri\Dosya_Ve_Klasor_Islemleri.csproj", "{4998D270-6B93-4446-98E6-982FAA6640DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dosya_Klasor_Ornek", "Dosya_Klasor_Ornek\Dosya_Klasor_Ornek.csproj", "{D2587581-06A7-4B5E-AFDE-F8A1DFFAEF48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{C7F02465-DBBE-46B5-A731-6EE0838D0D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7F02465-DBBE-46B5-A731-6EE0838D0D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7F02465-DBBE-46B5-A731-6EE0838D0D56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4998D270-6B93-4446-98E6-982FAA6640DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4998D270-6B93-4446-98E6-982FAA6640DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4998D270-6B93-4446-98E6-982FAA6640DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4998D270-6B93-4446-98E6-982FAA6640DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2587581-06A7-4B5E-AFDE-F8A1DFFAEF48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2587581-06A7-4B5E-AFDE-F8A1DFFAEF48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2587581-06A7-4B5E-AFDE-F8A1DFFAEF48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2587581-06A7-4B5E-AFDE-F8A1DFFAEF48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
