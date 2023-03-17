@@ -70,5 +70,28 @@ namespace WindowsForms_To_Do_Uygulaması
             }
 
         }
+
+        private void buttonkapat_Click(object sender, EventArgs e)
+        {
+            groupIslemler.Enabled = false;
+
+            foreach (Form item in this.MdiChildren) //Form un çocukların da dön onları kapat.
+            {
+                item.Close();
+            }
+
+            //Bu patladı..
+            //foreach (Form item in Application.OpenForms)
+            //{
+            //    if (item.Name!= "anaform")
+            //    {
+            //        item.Close();
+            //    }
+            //}
+            GirisForm girisekranı = new GirisForm();
+            girisekranı.MdiParent = this;
+            girisekranı.StartPosition = FormStartPosition.CenterScreen;
+            girisekranı.Show();
+        }
     }
 }

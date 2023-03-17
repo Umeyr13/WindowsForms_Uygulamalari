@@ -79,7 +79,7 @@
             this.buttonkapat.TabIndex = 2;
             this.buttonkapat.Text = "Uygulama Sonlandır";
             this.buttonkapat.UseVisualStyleBackColor = true;
-            this.buttonkapat.Click += new System.EventHandler(this.button_Yenikayit_Click);
+            this.buttonkapat.Click += new System.EventHandler(this.buttonkapat_Click);
             // 
             // buttonListele
             // 
