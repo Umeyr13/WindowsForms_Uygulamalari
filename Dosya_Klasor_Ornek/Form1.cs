@@ -39,12 +39,29 @@ namespace Dosya_Klasor_Ornek
             DirectoryInfo klasoradi;
             for (int i = 0; i < list_Personel.Items.Count; i++)
             {
-                if (!Directory.Exists(@"C:\Users\SABAH YAZILIM\Desktop\Ulkeler\"+list[i].ülk)
+                if (!Directory.Exists(@"C:\Users\SABAH YAZILIM\Desktop\Ulkeler\"+list[i].ulke))
                 {
 
-                }
-             
+                }                               
             }
+            //2. Yöntem dosyaya yazı yazma. Close dan önce yapılır.
+            byte[] bytedizi = new UTF8Encoding(true).GetBytes("Buraya yazılan veri byte dizisine dönüşür");
+            FileStream fs;
+            //fs.Write(bytedizi, 0, bytedizi.Length);
+           // fs.Close();
+        }
+
+        private void list_Personel_Click(object sender, EventArgs e)
+        {
+         Personel p = (Personel)list_Personel.SelectedItem;
+            textBox1.Text = p.isim;
+            textBox2.Text = p.soyisim;
+            textBox3.Text = p.email;
+            textBox4.Text = p.ulke;
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
 
         }
     }
