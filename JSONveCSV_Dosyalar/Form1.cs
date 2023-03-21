@@ -66,5 +66,13 @@ namespace JSONveCSV_Dosyalar
                 csv.WriteRecords(list);
                 dosya.Close();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            StreamReader dosya = new StreamReader ("C:\\CSV\\personeller.csv");
+            CsvReader csvoku = new CsvReader(dosya,CultureInfo.InvariantCulture);
+            listBox1.DataSource= csvoku.GetRecords<Personel>().ToList();
+
+        }
     }
 }
