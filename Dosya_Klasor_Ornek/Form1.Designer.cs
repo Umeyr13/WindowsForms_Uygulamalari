@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.list_Personel = new System.Windows.Forms.ListBox();
             this.button_Prsl_Kaydet = new System.Windows.Forms.Button();
             this.button_Liste = new System.Windows.Forms.Button();
+            this.list_Personel = new System.Windows.Forms.ListBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,28 +42,18 @@
             this.groupBox1.Controls.Add(this.button_Liste);
             this.groupBox1.Controls.Add(this.list_Personel);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.groupBox1.Size = new System.Drawing.Size(314, 365);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(5);
+            this.groupBox1.Size = new System.Drawing.Size(392, 365);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personel Listesi";
             // 
-            // list_Personel
-            // 
-            this.list_Personel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.list_Personel.FormattingEnabled = true;
-            this.list_Personel.ItemHeight = 26;
-            this.list_Personel.Location = new System.Drawing.Point(8, 33);
-            this.list_Personel.Name = "list_Personel";
-            this.list_Personel.Size = new System.Drawing.Size(197, 316);
-            this.list_Personel.TabIndex = 0;
-            // 
             // button_Prsl_Kaydet
             // 
             this.button_Prsl_Kaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button_Prsl_Kaydet.Location = new System.Drawing.Point(211, 97);
+            this.button_Prsl_Kaydet.Location = new System.Drawing.Point(303, 94);
             this.button_Prsl_Kaydet.Name = "button_Prsl_Kaydet";
             this.button_Prsl_Kaydet.Size = new System.Drawing.Size(89, 58);
             this.button_Prsl_Kaydet.TabIndex = 1;
@@ -74,7 +64,7 @@
             // button_Liste
             // 
             this.button_Liste.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button_Liste.Location = new System.Drawing.Point(211, 33);
+            this.button_Liste.Location = new System.Drawing.Point(303, 30);
             this.button_Liste.Name = "button_Liste";
             this.button_Liste.Size = new System.Drawing.Size(89, 58);
             this.button_Liste.TabIndex = 2;
@@ -82,14 +72,24 @@
             this.button_Liste.UseVisualStyleBackColor = true;
             this.button_Liste.Click += new System.EventHandler(this.button_Liste_Click);
             // 
+            // list_Personel
+            // 
+            this.list_Personel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.list_Personel.FormattingEnabled = true;
+            this.list_Personel.ItemHeight = 20;
+            this.list_Personel.Location = new System.Drawing.Point(8, 33);
+            this.list_Personel.Name = "list_Personel";
+            this.list_Personel.Size = new System.Drawing.Size(289, 304);
+            this.list_Personel.TabIndex = 0;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(328, 395);
+            this.ClientSize = new System.Drawing.Size(406, 395);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

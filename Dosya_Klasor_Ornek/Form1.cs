@@ -38,12 +38,22 @@ namespace Dosya_Klasor_Ornek
            
             DirectoryInfo klasoradi;
             for (int i = 0; i < list_Personel.Items.Count; i++)
-            {
-                if (!Directory.Exists(@"C:\Users\SABAH YAZILIM\Desktop\Ulkeler\"+list[i].ülk)
+            {//\Users\SABAH YAZILIM\Desktop
+                if (!Directory.Exists(@"C:\Ulkeler\"+list[i].ulke))//biz kontrol ediyoruz varsa başka oluşturma diye. Ama bu kod zaten aynı dosyadan sadece bir tane oluşturuyor. Sormak lazım...
                 {
-
+                    Directory.CreateDirectory(@"C:\\Ulkeler\" + list[i].ulke);
                 }
-             
+                if (!Directory.Exists(@"C:\Ulkeler\" + list[i].ulke + @"\" + list[i].isim + list[i].soyisim))
+                {
+                   Directory.CreateDirectory(@"C:\Ulkeler\" + list[i].ulke + @"\" + list[i].isim + list[i].soyisim);
+                }
+                if (!Directory.Exists(@"C:\Ulkeler\" + list[i].ulke + @"\" + list[i].isim + list[i].soyisim+@"\Bilgiler.txt"))
+                {
+                    File.Create(@"C:\Ulkeler\" + list[i].ulke + @"\" + list[i].isim + list[i].soyisim + @"\Bilgiler.txt").Close();
+                    
+                }
+                File.AppendAllText(@"C:\Ulkeler\" + list[i].ulke + @"\" + list[i].isim + list[i].soyisim + @"\Bilgiler.txt", list[i].email + list[i].firmaAdi);
+   
             }
 
         }
