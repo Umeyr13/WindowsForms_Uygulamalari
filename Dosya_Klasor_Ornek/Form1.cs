@@ -48,6 +48,8 @@ namespace Dosya_Klasor_Ornek
                    Directory.CreateDirectory(@"C:\Ulkeler\" + list[i].ulke + @"\" + list[i].isim + list[i].soyisim);
                 }
                 if (!Directory.Exists(@"C:\Ulkeler\" + list[i].ulke + @"\" + list[i].isim + list[i].soyisim+@"\Bilgiler.txt"))
+            {
+                if (!Directory.Exists(@"C:\Users\SABAH YAZILIM\Desktop\Ulkeler\"+list[i].ulke))
                 {
                     File.Create(@"C:\Ulkeler\" + list[i].ulke + @"\" + list[i].isim + list[i].soyisim + @"\Bilgiler.txt").Close();
                     
@@ -55,6 +57,27 @@ namespace Dosya_Klasor_Ornek
                 File.AppendAllText(@"C:\Ulkeler\" + list[i].ulke + @"\" + list[i].isim + list[i].soyisim + @"\Bilgiler.txt", list[i].email + list[i].firmaAdi);
    
             }
+
+                }                               
+            }
+            //2. Yöntem dosyaya yazı yazma. Close dan önce yapılır.
+            byte[] bytedizi = new UTF8Encoding(true).GetBytes("Buraya yazılan veri byte dizisine dönüşür");
+            FileStream fs;
+            //fs.Write(bytedizi, 0, bytedizi.Length);
+           // fs.Close();
+        }
+
+        private void list_Personel_Click(object sender, EventArgs e)
+        {
+         Personel p = (Personel)list_Personel.SelectedItem;
+            textBox1.Text = p.isim;
+            textBox2.Text = p.soyisim;
+            textBox3.Text = p.email;
+            textBox4.Text = p.ulke;
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
 
         }
     }
